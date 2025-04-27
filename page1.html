@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        /* Gradient Background */
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #9DC7A6, #D4E3D3); /* Sage Green Gradient */
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Main Text Styling */
+        h1 {
+            font-size: 4em;
+            color: white;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7);
+            animation: glow 1.5s infinite alternate;
+        }
+
+        /* Glowing effect animation */
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+            }
+            100% {
+                text-shadow: 0 0 25px rgba(255, 255, 255, 1), 0 0 50px rgba(255, 255, 255, 1);
+            }
+        }
+
+        /* Smaller text styling */
+        .love-from-sam {
+            font-size: 1.5em;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Button Styling */
+        .open-button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #e8f5e9;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .open-button:hover {
+            background-color: #d1f3db;
+        }
+
+        /* Heart SVG Animation */
+        #heart-svg {
+            display: block;
+            margin: 20px auto;
+            width: 80px;
+            height: 80px;
+            animation: heart-beat 1.5s infinite alternate;
+        }
+
+        @keyframes heart-beat {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        svg #line {
+            fill: none;
+            stroke: #e00000;
+            stroke-width: 1.5;
+            stroke-linecap: butt;
+            stroke-linejoin: round;
+            stroke-miterlimit: 4;
+        }
+
+        svg #point {
+            fill: none;
+            stroke: #e00000;
+            stroke-width: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Happy Anniversary My Souh</h1>
+        <p class="love-from-sam">Love From Sam<3</p>
+        
+        <!-- Heart SVG animation -->
+        <svg id="heart-svg" xmlns="http://www.w3.org/2000/svg" id="svg5" version="1.1" viewBox="-5-5 278 56">
+            <filter id="blur">
+                <feGaussianBlur stdDeviation="1.6" />
+            </filter>
+
+            <g id="layer1" transform="translate(29.1-127.42)">
+                <path id="line" d="M-28.73 167.2c26.43 9.21 68.46-9.46 85.45-12.03 18.45-2.78 32.82 4.86 28.75 9.83-3.82 4.66-25.77-21.18-14.81-31.5 9.54-8.98 17.64 10.64 16.42 17.06-1.51-6.2 2.95-26.6 14.74-22.11 11.7 4.46-4.33 49.03-15.44 44,08-6.97-3.1 15.44-16.26 26.1-16 23.03.56 55.6 27.51 126.63 3.36" pathLength="1" />
+            </g>
+
+            <g id="layer2" transform="translate(29.1-127.42)">
+                <path filter="url(#blur)" id="point" d="M-28.73 167.2c26.43 9.21 68.46-9.46 85.45-12.03 18.45-2.78 32.82 4.86 28.75 9.83-3.82 4.66-25.77-21.18-14.81-31.5 9.54-8.98 17.64 10.64 16.42 17.06-1.51-6.2 2.95-26.6 14.74-22.11 11.7 4.46-4.33 49.03-15.44 44.08-6.97-3.1 15.44-16.26 26.1-16 23.03.56 55.6 27.51 126.63 3.36" pathLength="1"/>
+            </g>
+        </svg>
+
+        <!-- Open Button -->
+        <button class="open-button" onclick="window.location.href='page2.html'">Open Me</button>
+    </div>
+</body>
+</html>

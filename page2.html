@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary</title>
+    <style>
+        /* Gradient Background */
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #9DC7A6, #D4E3D3); /* Same as the first page */
+            font-family: 'Callum', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Card Container */
+        .card {
+            width: 80%;
+            max-width: 1000px;
+            padding: 30px;
+            background-color: pink;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Glowing Text */
+        h1 {
+            font-size: 2.5em;
+            color: #ffffff; /* Title text color changed to white */
+            font-family: 'Georgia', serif;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.6); /* Glowing effect */
+        }
+
+        p {
+            font-size: 1.3em;
+            color: #ffffff; /* Text color changed to white */
+            margin-top: 20px;
+            font-family: 'Courier New', monospace;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.6);
+            line-height: 1.5;
+        }
+
+        /* Button Styling */
+        .back-button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #00FFFF; /* Cyan color for the button */
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #d1f3db;
+        }
+
+        /* Floating Hearts */
+        .heart {
+            position: absolute;
+            bottom: -50px;
+            font-size: 3em;
+            color: #e00000;
+            animation: floatHearts 6s linear infinite;
+        }
+
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Card Container -->
+    <div class="card">
+        <h1>Happy Anniversary My Beloved Souh</h1>
+        <p>It's been two years, 730 days since you and I became "us" with countless memories and innumerable moments which I can cherish my whole life. Every second we spent so far together is so close to my heart. our forever begins now. Despite all the negatives and wrongs, our love remains true and strong. No matter how tough things get, you'll never not be my very own person. Forever and after, we'll remain, we'll love, and we'll stay together beside and with each other InShaAllah. I love you, Souh.</p>
+
+        <!-- Button to go back -->
+        <button class="back-button" onclick="window.location.href='index.html'">Back to Anniversary Page</button>
+    </div>
+
+    <!-- Floating Heart Elements -->
+    <div class="heart" style="animation-delay: 0s;">❤️</div>
+    <div class="heart" style="animation-delay: 2s;">❤️</div>
+    <div class="heart" style="animation-delay: 4s;">❤️</div>
+    <div class="heart" style="animation-delay: 1s;">❤️</div>
+    <div class="heart" style="animation-delay: 3s;">❤️</div>
+
+</body>
+</html>
